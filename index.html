@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+  
+<!-- Mirrored from uigaint.com/demo/html/anfra_2/job-1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Dec 2021 06:53:26 GMT -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Template</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    
+    <!-- External Css -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+
+    <!-- Custom Css --> 
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/job-1.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+  
+
+    <!-- Favicon -->
+    <link rel="icon" href="../images/favicon.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/icon-114x114.png">
+
+
+  </head>
+  <body onload="get()">
+
+    <div class="ugf-wrapper">
+      <div class="logo">
+        <img src="images/image.png" class="img-fluid logo-white" alt="" width=250px height="150px" style="position: fixed;">
+        <img src="images/image.png" class="img-fluid logo-black" alt=""  width=250px height="150px" style="position: fixed;">
+      </div>
+      <div class="ugf-content-block">
+        <div class="content-block">
+  <!-- <img class="back" src="images/bg/job-bg.jpg">
+ -->       <div class="up"> <h1>We are creative agency <br> Let’s Join with us !</h1>
+          <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain but because.</p>
+        </div></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 offset-lg-6">
+            <div class="ufg-job-application-wrapper pt150">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><span class="step-text"><span class="current-step"></span> of <span class="total-step"></span> completed</span></div>
+              </div>
+              <div class="form-steps active">
+                <h3>Personal information</h3>
+                <form action="#" class="job-application-form" name="myForm1" onSubmit="return Register()">
+      
+            <div class="row">
+              <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="input-text" name="text1" required>
+                    <label for="input-text">Name*</label>
+        
+                  </div>
+                  </div>
+                  <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="mail" class="form-control" id="input-mail" name="mail" required>
+                    <label for="input-mail">Email Addresss*</label>
+                  </div>
+                </div>
+                </div>
+               <div class="row">
+                <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="phone" class="form-control" id="input-pass" name="phone" required>
+                    <label for="input-pass">Phone*</label>
+                    
+                  </div>
+                 </div>
+                 <div class="col-lg-6">
+
+                  <div class="form-group country-select">
+                    <div class="select-input choose-country">
+                      <span></span>
+                        <select id="inputCountry" class="form-control">
+                          <option value="India">India</option>
+
+                        </select>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+
+                    <div class="form-group country-select">
+                      <div class="select-input choose-country">
+                        
+                       <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required>
+                        <option value="">Select State*</option>
+
+                      </select>
+                    </div>
+                      </div></div>
+                      <div class="col-lg-6">
+
+                      <div class="form-group country-select">
+                        <div class="select-input choose-country">
+                        
+                           <select id ="state" class="form-control" name="stt1" required>
+                             <option value="">Select City* </option>
+                           </select>
+                            
+                          
+                          
+                        </div>
+                  </div></div></div>
+                <div class="row">
+                  <div class="col-lg-6">
+
+                  <div class="form-group check-gender">
+                    <span class="lebel-text">Select Gender</span>
+                    <div class="custom-radio">
+                      <input type="radio" name="gender" class="custom-control-input" id="male" value="1" required>
+                      <label class="custom-control-label" for="male">Male</label>
+                    </div>
+                    <div class="custom-radio">
+                      <input type="radio" name="gender" class="custom-control-input" id="female" value="2" required>
+                      <label class="custom-control-label" for="female">Female</label>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-6 my-4">
+
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="link1" required>
+                      <label for="input-mail">Share Your Github Profile*</label>
+                    </div>
+  
+                  </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="link2" required>
+                          <label for="input-text">Share Your Twitter Profile*</label>
+              
+                        </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="input-mail" name="link3" required>
+                          <label for="input-mail">Share Your Linkedin Profile*</label>
+                        </div>
+                      </div>
+                      </div>
+
+
+                  <button class="btn step-btn" type="submit" id="bt1" value="1">Next</button>
+                </form>
+              </div>
+              <!-- 2nd page -->
+              <div class="form-steps">
+                <a href="index.html" class="prev"><i class="las la-arrow-left"></i>Previous Step</a>
+                <h3 class="border-bottom">Education Information</h3>
+                <form class="job-application-form" id="myForm2">
+                  <div class="form-group country-select">
+                    <div class="select-input choose-country">
+                      <span></span>
+                        <select id="class" class="form-control" name="text2_class">
+                          <option value="">Select Class*</option>
+                          <option value="10">10th</option>
+                          <option value="12">12th</option>
+                        
+                        </select>
+                    </div>
+              </div>
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="text2" required>
+                    <label for="input-mail"> School Name*</label>
+                  </div>
+                  <div class="row">
+                   
+                  <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="input-mail" name="text2_loc" required>
+                    <label for="input-mail"> School Location*</label>
+                  </div></div>
+
+                  <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="input-mail" name="mark2" required>
+                    <label for="input-mail"> Percentage/CGPA*</label>
+                  </div></div></div>
+                  <div class="row">
+                  <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="date" class="form-control" id="input-mail" name="text2_d1" required>
+                    <label for="input-mail"> Start Date*</label>
+                  </div></div>
+                  
+                    <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="date" class="form-control" id="input-mail" name="text2_d2" required>
+                    <label for="input-mail"> End Date*</label>
+                  </div></div></div>
+                  <div id="addLink" class="form-group"><a onclick="higher()"><i class="fa fa-plus-circle"></i> Add More Education</a></div>
+                  <div id="remLink" class="form-group"><a onclick="removehigher()"><i class="fa fa-minus-circle"></i> Remove Education</a></div>
+
+                  <div id="add">
+                  <div class="form-group">
+                    <div class="select-input">
+                      <span></span>
+                        <select id="class" class="form-control" name="text4_class" id="selectclass">
+                          <option value="">Select Class</option>
+                          <option value="10">10th</option>
+                          <option value="12">12th</option>
+
+                        </select>
+                    </div>
+              </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="text4" required>
+                    <label for="input-mail"> School Name*</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="text4_loc" id="input-mail" required>
+                    <label for="input-mail">School Location*</label>
+                  </div></div>
+                  <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="mark4" id="input-mail" required>
+                    <label for="input-mail">Percentage/CGPA*</label>
+                  </div></div></div>
+                  <div class="row">
+                    <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="date" class="form-control" name="text4_d1" id="input-mail" required>
+                    <label for="input-mail"> Start Date*</label>
+                  </div></div>
+                  <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="date" class="form-control" name="text4_d2" id="input-mail" required>
+                    <label for="input-mail"> End Date*</label>
+                  </div></div></div></div>
+            
+                  <button class="btn step-btn" id="bt2" value="2">Next</button>
+                </form>
+              </div>
+
+              <!-- 3rd page -->
+              <div class="form-steps">
+                <a href="job-2.html" class="prev"><i class="las la-arrow-left"></i>Previous Step</a>
+                <h3>Graduation Education Information</h3>
+                <form class="job-application-form" id="mForm3">
+                  <div class="row">
+                    <div class="col-lg-6">
+                  <div class="form-group">
+
+                    <input type="text" class="form-control" id="input-mail" name="text3" required>
+                    <label for="input-mail"> College/University Name*</label>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="input-mail" name="text3_loc" required>
+                    <label for="input-mail"> College/University Location*</label>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="select-input">
+                      <span></span>
+                        <select id="inputCountry" class="form-control" name="cl3">
+                          <option value="Bachelor's degree">Bachelor's degree</option>
+                          <option value="Master's degree">Master's degree</option>
+                          <option value="Master's degree">Doctorate or higher</option>
+                          <option value="Diploma">Diploma</option>
+                          <option value="No degree">No degree</option>
+                          <option value="Other">Other</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="input-mail" name="mark3" required>
+                    <label for="input-mail"> College/University Percentage/CGPA*</label>
+                  </div>
+    
+                <div class="row">
+                  <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="date" class="form-control" id="input-mail" name="text3_d1" required>
+                    <label for="input-mail"> College/University Start Date*</label>
+                  </div></div>
+                  <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="date" class="form-control" id="input-mail" name="text3_d2" required>
+                    <label for="input-mail"> College/University End Date*</label>
+                  </div></div></div>
+                  <div class="form-group">
+                    <textarea  class="form-control" name="extra1" id="input-mail" required></textarea>
+                    <label for="input-mail">If you have any additional information about your graduation, Write here.</label>
+                  </div>
+                  <div id="addLink2" class="form-group"><a onclick="graduation()"><i class="fa fa-plus-circle"></i> Add More Education</a></div>
+                  <div id="remLink2" class="form-group"><a onclick="removegraduation()"><i class="fa fa-minus-circle"></i> Remove Education</a></div>
+
+                  <div id="addGrad">
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="t5" required>
+                      <label for="input-mail"> College/University Name*</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="t5_loc" required>
+                      <label for="input-mail"> College/University Location*</label>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="select-input">
+                        <span></span>
+                          <select id="inputCountry" name="cl5" class="form-control">
+                            <option value="">Bachelor's degree</option>
+                            <option value="">Master's degree</option>
+                            <option value="">Doctorate or higher</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="">No degree</option>
+                            <option value="">Other</option>
+                          </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="t5_marks" id="input-mail" required>
+                      <label for="input-mail"> College/University Percentage/CGPA*</label>
+                    </div>
+      
+                  <div class="row">
+                    <div class="col-lg-6">
+  
+                    <div class="form-group">
+                      <input type="date" class="form-control" name="t5_d1" id="input-mail" required>
+                      <label for="input-mail"> College/University Start Date*</label>
+                    </div></div>
+                    <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="date" class="form-control" name="t5_d2" id="input-mail" required>
+                      <label for="input-mail"> College/University End Date*</label>
+                    </div></div></div>
+                    <div class="form-group">
+                      <textarea  class="form-control" id="input-mail" name="extra2" required></textarea>
+                      <label for="input-mail">If you have any additional information about your graduation, Write here.</label>
+
+                    </div>
+                    <div id="addLink5" class="form-group"><a onclick="diploma()"><i class="fa fa-plus-circle"></i> Add More Education</a></div>
+
+                  </div>
+                  <div id="remLink5" class="form-group"><a onclick="removediploma()"><i class="fa fa-minus-circle"></i> Remove Education</a></div>
+                  <div id="adddiploma">
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="t6" required>
+                      <label for="input-mail"> College/University Name*</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="t6_loc" required>
+                      <label for="input-mail"> College/University Location*</label>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="select-input">
+                        <span></span>
+                          <select id="inputCountry" class="form-control" name="cl6">
+                            <option value="Bachelor's degree">Bachelor's degree</option>
+                            <option value="Master's degree">Master's degree</option>
+                            <option value="Master's degree">Doctorate or higher</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="No degree">No degree</option>
+                            <option value="Other">Other</option>
+                          </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="t6_marks" required>
+                      <label for="input-mail"> College/University Percentage/CGPA*</label>
+                    </div>
+      
+                  <div class="row">
+                    <div class="col-lg-6">
+  
+                    <div class="form-group">
+                      <input type="date" class="form-control" id="input-mail" name="t6_d1" required>
+                      <label for="input-mail"> College/University Start Date*</label>
+                    </div></div>
+                    <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="date" class="form-control" id="input-mail" name="t6_d2" required>
+                      <label for="input-mail"> College/University End Date*</label>
+                    </div></div></div>
+                    <div class="form-group">
+                      <textarea  class="form-control" name="extra3" id="input-mail"  required></textarea>
+                      <label for="input-mail">If you have any additional information about your graduation, Write here.</label>
+                    </div>
+                  </div>
+                  <button class="btn step-btn" id="bt3" value="3">Next</button>
+                </form>
+              </div>
+              <!-- 4th page -->
+              <div class="form-steps">
+                <a href="job-3.html" class="prev"><i class="las la-arrow-left"></i>Previous Step</a>
+                <h3 class="border-bottom">Work History</h3>
+                <form class="job-application-form" id="myForm4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                  <div class="form-group">
+
+                    <input type="text" class="form-control" id="input-mail" name="emp1" required>
+                    <label for="input-mail"> Job Title</label>
+                  </div></div>
+                  <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="input-mail" name="emp1_name" required>
+                    <label for="input-mail"> Employer Name</label>
+                  </div></div></div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                    <input type="text" class="form-control" id="input-mail" name="emp1_city" required>
+                    <label for="input-mail">Enter City</label>
+                  </div></div>
+                  <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="input-mail" name="emp1_state" required>
+                    <label for="input-mail">Enter State</label>
+                  </div></div></div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="input-mail" name="emp1_des" required>
+                    <label for="input-mail">How long you have been working there</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="date" class="form-control" id="input-mail" name="emp1_d1" required>
+                    <label for="input-mail"> Start Date</label>
+                  </div></div>
+                  <div class="col-lg-6">
+
+                  <div class="form-group">
+                    <input type="date" class="form-control" id="input-mail" name="emp1_d2" required>
+                    <label for="input-mail">End Date</label>
+                  </div></div></div>
+                  <div class="form-group check-group">
+                    <div id="addLink3" class="form-group"><a onclick="work1()"><i class="fa fa-plus-circle"></i> Add More Work</a></div>
+                    <div id="remLink3" class="form-group"><a onclick="removework1()"><i class="fa fa-minus-circle"></i> Remove Work</a></div>
+
+                    <div class="custom-checkbox" id="fresh">
+                      <input type="checkbox" class="custom-control-input" id="terms" name="frh" onclick="fresher()" value="True" required>
+                      <label class="custom-control-label" for="terms">I don't have experience. I am a fresher.</label>
+                    </div>
+                  </div>
+                   <div id="work1"> <div class="row">
+                      <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="emp2"required>
+                      <label for="input-mail"> Job Title</label>
+                    </div></div>
+                    <div class="col-lg-6">
+  
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="emp2_name" required>
+                      <label for="input-mail"> Employer Name</label>
+                    </div></div></div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="emp2_city" required>
+                      <label for="input-mail">Enter City</label>
+                    </div></div>
+                    <div class="col-lg-6">
+  
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name='emp2_state' required>
+                      <label for="input-mail">Enter State</label>
+                    </div></div></div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="emp2_des" required>
+                      <label for="input-mail">How long you have been working there</label>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+  
+                    <div class="form-group">
+                      <input type="date" class="form-control" id="input-mail" name="emp2_d1" required>
+                      <label for="input-mail"> Start Date</label>
+                    </div></div>
+                    <div class="col-lg-6">
+  
+                    <div class="form-group">
+                      <input type="date" class="form-control" id="input-mail" name="emp2_d2" required>
+                      <label for="input-mail">End Date</label>
+                    </div></div></div>
+                    <div id="addLink4" class="form-group"><a onclick="work2()"><i class="fa fa-plus-circle"></i> Add More Work</a></div>
+
+                  </div>
+                  <div id="remLink4" class="form-group"><a onclick="removework2()"><i class="fa fa-minus-circle"></i> Remove Work</a></div>
+
+                <div id="work2">
+                    <div class="row">
+                      <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="emp3" required>
+                      <label for="input-mail"> Job Title</label>
+                    </div></div>
+                    <div class="col-lg-6">
+  
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="emp3_name" required>
+                      <label for="input-mail"> Employer Name</label>
+                    </div></div></div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="emp3_city"  required>
+                      <label for="input-mail">Enter City</label>
+                    </div></div>
+                    <div class="col-lg-6">
+  
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="emp3_state" required>
+                      <label for="input-mail">Enter State</label>
+                    </div></div></div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-mail" name="emp3_des" required>
+                      <label for="input-mail">How long you have been working there</label>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+  
+                    <div class="form-group">
+                      <input type="date" class="form-control" id="input-mail" name="emp3_d1" required>
+                      <label for="input-mail"> Start Date</label>
+                    </div></div>
+                    <div class="col-lg-6">
+  
+                    <div class="form-group">
+                      <input type="date" class="form-control" id="input-mail" name="emp3_d2" required>
+                      <label for="input-mail">End Date</label>
+                    </div></div></div></div>
+                
+
+                  <button class="btn step-btn" id="bt4" value="4">Next</button>
+                </form>
+              </div>
+              <!-- 5th page -->
+              <div class="form-steps">
+                <a href="job-4.html" class="prev"><i class="las la-arrow-left"></i>Previous Step</a>
+                <h3>Cover Letter & Resume</h3>
+                <form class="job-application-form" id="myForm5">
+
+                    <div class="form-group country-select">
+                      <div class="select-input">
+                        <span></span>
+                        <select id="choices-multiple-remove-button" name="skill" placeholder="Select skills" class="skills" multiple>
+                          <option value="HTML">HTML</option>
+                          <option value="Jquery">Jquery</option>
+                          <option value="CSS">CSS</option>
+                          <option value="Bootstrap 3">Bootstrap 3</option>
+                          <option value="Bootstrap 4">Bootstrap 4</option>
+                          <option value="Java">Java</option>
+                          <option value="Javascript">Javascript</option>
+                          <option value="Angular">Angular</option>
+                          <option value="Python">Python</option>
+                          <option value="Hybris">Hybris</option>
+                          <option value="SQL">SQL</option>
+                          <option value="NOSQL">NOSQL</option>
+                          <option value="NodeJS">NodeJS</option>
+                          <option value="Work Under Pressure">Work Under Pressure Skills</option>
+                          <option value="Strong Work">Strong Work Ethics Skills</option>
+                          <option value="Proactive Skills">Proactive Skills</option>
+                          <option value="Flexibility Skills">Flexibility Skills</option>
+                          <option value="Agile Skills">Agile Skills</option>
+                          <option value="Multitasking Skills">Multitasking Skills</option>
+                          <option value="Cyber Security">Cyber Security</option>
+                          <option value="Machine Learning">Machine Learning</option>
+                          <option value="Deep Learning">Deep Learning</option>
+                          <option value="AI">AI</option>
+                          <option value="Managment Skills">Managment Skills</option>
+                          <option value="Software Testing Skills">Software Testing Skills</option>
+                      </select>              
+                    
+
+                      </div>
+                    </div>
+                  <div class="form-group">
+              
+
+                    <textarea class="form-control" id="inputText" name="background" required></textarea>
+                    <label for="inputText">Briefly tell us about your background*</label>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" id="inputText" name="certificate" required></textarea>
+                    <label for="inputText">Briefly Explain your cerificates details, if you have any?</label>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" id="inputText" name="accom" required></textarea>
+                    <label for="inputText">Add your accomplishment and cerificates</label>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" id="inputText" name="hobbies" required></textarea>
+                    <label for="inputText">Share your interests and hobbies</label>
+                  </div>
+                  <button class="btn" onclick="sub()"  name="submit" >Next</button>
+                  
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+
+        <div class="copyright">
+          <p>Copyright © 2021 Hireyy. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+<!--     <script language="javascript"></script>
+ -->   <script src="js/cities.js"></script> 
+<!--  <script src="js/save.js"></script>
+ -->
+
+    <script src="js/custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+<!-- Mirrored from uigaint.com/demo/html/anfra_2/job-1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Dec 2021 06:53:54 GMT -->
+</html>
